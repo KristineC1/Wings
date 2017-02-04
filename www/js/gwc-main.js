@@ -6,8 +6,8 @@
  * @author lestarch (Michael Starch)
  */
 /**
- * Main function entry point for GWC project code. This function runs after the app has 
- * been initialized and all resources are prepared for execution.  It is passed the 
+ * Main function entry point for GWC project code. This function runs after the app has
+ * been initialized and all resources are prepared for execution.  It is passed the
  * "app" object from cordova in case that is needed.
  * @param app - Cordova app object
  */
@@ -24,4 +24,15 @@ function main(app)
     var button = document.getElementById("change-button");
     //Set a function to call on a click of the button
     button.onclick = change;
+    //Read the value
+    //Put it into an alert pop-up
+    var is_checked = document.getElementById("checkbox-1").checked;
+    if (is_checked)
+    {
+        alert("You are human!");
+    }
+    else
+    {
+        alert("What are you?");
+    }
 }
